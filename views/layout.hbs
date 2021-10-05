@@ -2,38 +2,22 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <!-- Boostrap https://getbootstrap.com/docs/5.1/getting-started/introduction/-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <div>
-        <!-- sample Navbar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <!-- Brand -->
-            <a class="navbar-brand" href="/">Portfolio</a>
-
-            <!-- Toggler/collapsible Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/aboutMe">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    <header>
+       	<div class ="container">
+	<img alt="d" src="/images/logo.jpg" class="logo">
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="aboutMe">About Me</a></li>
+				<li><a href="projects">Projects</a></li>
+				<li><a href="contact">Contact Me</a></li>
+			</ul>
+		</nav>
+	</div>
+	</header>
     {{{body}}}
   </body>
 </html>
