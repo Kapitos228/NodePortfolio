@@ -1,18 +1,39 @@
 body {
-  padding: 50px;
+  padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin:0;
+  background-color: #222;
+  font-family: sans-serif;
 }
 
 
-body{
-	margin:0;
-	background-color: #222;
-	font-family: sans-serif;
+/* Navbar and footer related CSS*/
+footer {
+	background: rgb(133, 71, 184);
+    clear: both;
+    position: relative;
+    height: 100px;
 }
 
 .container{
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
+
+}
+.footernav{
+	float: left;
+}
+
+.footertext{
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 100px;
+	color:rgb(0, 0, 0);
+}
+
+.bodycontainer{
+	position: relative;
+	min-height: 100vh;
 }
 
 header{
@@ -78,3 +99,84 @@ nav a:hover::before{
 	width:100%;
 	
 }
+/*---------------------------------------*/
+
+/*Text formatting body*/
+h1{
+	font-size: 45px;
+	margin-top: 50px;
+	color: black;
+	text-align: center;
+	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+}
+
+.aboutText{
+	padding-left: 500px;
+	margin-top: 90px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#block1 {
+	display: block;
+	margin: auto;
+	background: azure;
+	width: 1200px;
+	height: 600px;  
+	border: 10px solid;
+	border-image-slice: 1;
+	border-width: 5px;
+	border-image-source: linear-gradient(to left, rgb(133, 71, 184), rgb(202, 38, 153));
+	margin-top: 100px;
+}
+
+.catme{
+	width: 300px;
+	margin-top: 50px;
+	margin-left: 150px;
+	border-radius: 30%;
+	float: left;
+}
+
+.aboutref{
+	text-decoration:none;
+	color: black;
+	font-weight: bold;
+	padding-left: 50px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.aboutref:hover{
+	color:rgb(0, 0, 0);
+	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+}
+
+.aboutloc{
+	text-decoration:none;
+	color: black;
+	font-weight: bold;
+	padding-left: 500px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.linkedin{
+	color: black;
+}
+
+.linkedin:hover{
+	color:rgb(0, 0, 0);
+	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+}
+
+.github{
+	color: black;
+}
+
+.github:hover{
+	color:rgb(0, 0, 0);
+	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+}
+
