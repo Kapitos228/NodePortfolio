@@ -15,6 +15,71 @@ footer {
     height: 100px;
 }
 
+.linkedin{
+	color: black;
+}
+
+.linkedin:hover{
+	color:rgb(0, 0, 0);
+	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+}
+
+.github{
+	color: black;
+}
+
+.github:hover{
+	color:rgb(0, 0, 0);
+	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+}
+
+.linkedinf{
+	color: black;
+}
+.linkedinf:hover{
+	color: black;
+}
+.linkedinf:before{
+	content: '';
+	display:block;
+	height:5px;
+	background-color:rgb(0, 0, 0);
+	position:absolute;
+	top:0;
+	width:0%;
+	
+	transition: all ease-in-out 250ms;
+}
+
+.linkedinf:hover::before{
+	width:100%;
+	
+}
+
+.githubf{
+	color: black;
+}
+.githubf:hover{
+	color: black;
+}
+
+.githubf:before{
+	content: '';
+	display:block;
+	height:5px;
+	background-color:rgb(0, 0, 0);
+	position:absolute;
+	top:0;
+	width:0%;
+	
+	transition: all ease-in-out 250ms;
+}
+
+.githubf:hover::before{
+	width:100%;
+	
+}
+
 .container{
 	width: 100%;
 	margin: 0 auto;
@@ -25,7 +90,7 @@ footer {
 }
 
 .footertext{
-	font-weight: bold;
+	
 	font-size: 20px;
 	margin-left: 100px;
 	color:rgb(0, 0, 0);
@@ -60,7 +125,7 @@ nav li{
 	display: inline-block;
 	margin-left:100px;
 	padding-top: 65px;
-	
+	font-weight: 600;
 	position:relative;
   font-size: large;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -75,6 +140,7 @@ img.logo{
 
 nav a{
 	color: rgb(24, 24, 24);
+	font-weight: 30px;
 	text-decoration:none;
 	text-transform: uppercase;
 }
@@ -101,7 +167,7 @@ nav a:hover::before{
 }
 /*---------------------------------------*/
 
-/*Text formatting body*/
+/*Text formatting*/
 h1{
 	font-size: 45px;
 	margin-top: 50px;
@@ -110,18 +176,14 @@ h1{
 	text-shadow: 2px 2px 8px rgb(133, 71, 184);
 }
 
-.aboutText{
-	padding-left: 500px;
-	margin-top: 90px;
-	color: black;
-	font-weight: bold;
+#mainp{
 	font-size: 18px;
+	font-weight: bold;
 }
-
 #block1 {
 	display: block;
 	margin: auto;
-	background: azure;
+	background: white;
 	width: 1200px;
 	height: 600px;  
 	border: 10px solid;
@@ -131,7 +193,7 @@ h1{
 	margin-top: 100px;
 }
 
-.catme{
+#catme{
 	width: 300px;
 	margin-top: 50px;
 	margin-left: 150px;
@@ -139,44 +201,127 @@ h1{
 	float: left;
 }
 
-.aboutref{
-	text-decoration:none;
-	color: black;
-	font-weight: bold;
-	padding-left: 50px;
-	margin-top: 20px;
-	font-size: 18px;
-}
 
 .aboutref:hover{
 	color:rgb(0, 0, 0);
 	text-shadow: 2px 2px 8px rgb(133, 71, 184);
 }
+/*Contact form*/
 
-.aboutloc{
-	text-decoration:none;
-	color: black;
+form label, input, textarea{
+	display: block;
+	
+	
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #222;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(133 71 184 / 25%);
+}
+
+.mailstatus{
+	font-size: 15px;
+	font-weight: bolder;
+	color:rgb(190, 19, 125);
+}
+
+.border-danger {
+    border-color: #821ba2!important;
+}
+/*Projects*/
+.proj{
+	position: relative;
+
+}
+
+.projimg{
+	display: block;
+}
+
+.projoverlay{
+	top: 4px;
+	left: 4px;
+	position: absolute;
+	width: 97.2%;
+	height: 97.5%;
+	background:rgba(0,0,0,0.6) ;
+	font-family: 'Quicksand', sans-serif;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.2s;
+	
+}
+
+.projoverlay > * {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.projoverlay:hover{
+	opacity: 1;
+}
+
+.projoverlay:hover > * {
+	transform: translateY(0);
+}
+
+.projtitle{
 	font-weight: bold;
-	padding-left: 500px;
-	margin-top: 20px;
-	font-size: 18px;
+	font-size: 2em;
 }
 
-.linkedin{
-	color: black;
+.projdesc{
+	font-size: 1.25em;
+	text-align: center;
+	margin-top: 0.3em;
+
 }
 
-.linkedin:hover{
-	color:rgb(0, 0, 0);
-	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+.catimgclass{
+	position: relative;
+	width: 400px;
 }
 
-.github{
-	color: black;
+.catimg{
+	display: block;
+	width: 100%;
 }
 
-.github:hover{
-	color:rgb(0, 0, 0);
-	text-shadow: 2px 2px 8px rgb(133, 71, 184);
+.catoverlay{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.2s;
 }
 
+.catoverlay:hover{
+	opacity: 1;
+
+}
+
+.cattitle{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.catdesc{
+	font: 1.5em sans-serif;
+	margin-top: 13em;
+	font-weight: bold;
+}

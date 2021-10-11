@@ -1,1 +1,37 @@
-<h1>{{titleContact}}</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Source: https://www.jsdelivr.com/-->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+      <script src="/javascripts/contact.js"></script>
+  </head>
+  <body>
+    <div id="block1">
+        <h1>Contact Me</h1>
+        <!-- Form action source: https://formspree.io/-->
+        <form action="https://formspree.io/f/xbjqbbog" method="POST">
+          <div class="row justify-content-md-center mt-3">
+              <div class="col-sm-10">
+              <input type="email" class="form-control email" id="inputEmail" placeholder="Email" name="From:">
+         </div>
+      
+         <div class="col-sm-10 mt-3">
+          <input type="subject" class="form-control subject" id="inputSubject" placeholder="Subject" name="Subject:">
+        </div>
+         <div class="col-sm-10 mt-3">
+          <textarea type="message" class="form-control message" id="inputMesssage" placeholder="Messsage" style="max-height: 200px; height: 200px" name="Message:"></textarea>
+        </div>
+      <div class="col-sm-3 mt-3" style="text-align: center;">
+            <button type="submit" id="buttoncontact" class="submitmsg btn btn-dark btn-lg mt-3">Send</button>
+      </div>
+    </div>
+        </form>
+          <div class="row justify-content-md-center mt-3">
+            <div class="col-sm-2 mt-1" style="text-align: center;">
+          <div class="mailstatus"></div>
+      </div>
+    </div>
+  </div>
+    {{{body}}}
+  </body>
+</html>
