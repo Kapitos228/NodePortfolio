@@ -291,7 +291,9 @@ form label, input, textarea{
 
 .catimg{
 	display: block;
-	width: 100%;
+	width: 80%;
+	margin-left: 50px;
+	
 }
 
 .catoverlay{
